@@ -1,0 +1,349 @@
+body {
+    font-weight: 400;
+    font-family: Work Sans,Arial,sans-serif;
+    font-weight: 300;
+    letter-spacing: -0.3px;;
+    padding-top: 70px;
+    -webkit-font-smoothing: antialiased;
+    color: grey;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+    opacity: 0,75;
+    border-bottom-style: 1px solid lightgrey;
+    position:sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+   
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: inline-block;
+    color: grey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .dropdown {
+    float: right;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 13px;  
+    border: none;
+    outline: none;
+    color: grey;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: white;
+    opacity: 0,1;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px lightgrey;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: grey;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: transparent;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  h1 {
+    font-size: 2.125rem;
+    color: #00b39b;
+}
+
+::selection {
+    background: #00b39b;
+    color: #fff;
+    text-shadow: none;
+}
+
+.grid {
+    display: grid;
+    justify-content:center;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 50px;
+    width: 80%;
+    margin-top: 0px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    margin-left: 10px; 
+    }
+/* Les trois premiers box du site */
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2px 2px 2px 2px;
+    height: 220px;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    position: relative;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    animation-name: glissement;
+
+}
+
+.box1{
+    background-color: rgb(0, 204, 177)    ;
+    color: white;
+    box-shadow: none;
+    border-color: white;
+    border-radius: 10px 10px 10px 10px;
+    width: 30%;
+    height: auto;
+    background-attachment: scroll;
+    font-size: 16px;
+    opacity: 0.9;
+}
+.box2{
+    background-color: rgb(61, 131, 223)    ;
+    border-radius: 10px 10px 10px 10px;
+    border-color: white;
+    background-attachment: scroll;
+    color:white;
+    font-size: 16px;
+    width: 30%;
+    height: auto;
+    opacity: 0.9;
+}
+
+.box3{
+    background-attachment: scroll;
+    border-color: white;
+    font-size: 16px;
+    background-color: rgb(27, 39, 52)    ;
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+    height: auto;
+    width: 30% ;
+    opacity:0.9;
+}
+
+/* Première liste déroulante li dewkhetni */
+label,
+footer {
+    font-family: Roboto,sans-serif;
+    background-color: transparent;
+}
+
+label {
+    font-size: 1rem;
+    padding-right: 10px;
+    background-color: transparent;
+    scrollbar-shadow-color: grey;
+}
+
+select {
+    font-size: .9rem;
+    padding: 2px 5px;
+    border: 0;
+    border-radius: 0;
+    border: transparent;
+    background-color: transparent;
+    color: white;
+    text-decoration: underline;
+}
+
+select option { color: black; }
+select option:first-child{
+  color: white;
+}
+  
+
+footer {
+    font-size: .8rem;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.output {
+    background: transparent;
+    position: relative;
+}
+/* Logo : Deuxième partie du site (liste des liens)*/
+.part2{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    column-gap: 100px;
+    height: 200px;
+    width: 300px;
+    margin-bottom: 50px;
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+}
+.flexboxwrap{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 400px;
+    width: 300px;
+}
+
+/* Partie 3 du site web */
+.part3{
+display:inline-flex;
+background: #e5faf8;
+background-image: linear-gradient( -45deg,rgba(0,204,177,.01) 5%,rgba(61,199,223,.1));
+padding: 1.875em 0 .625em;
+overflow: hidden;
+margin: 3.125rem auto 5.5rem;
+vertical-align:middle;
+width: fit-content;
+height: fit-content;
+box-sizing: border-box;
+background-attachment:scroll;
+font-size: 16px;
+margin-bottom: 88px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 30px;
+height: 600px;
+background-size: auto;
+}
+/*  */
+.secondboxcontainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    float:right;
+    width: 500px ;
+    height: 700px;
+    border-radius: 10px 10px 10px 10px;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    animation-name: glissement;
+
+}
+
+.boxmhebelni{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin:0%;
+    border-color: rgb(27, 39, 52);
+    bottom: 0;
+}
+
+    /*  */
+.boxcontainer1{
+    width: 200px;
+    height: 250px;
+    margin-left: 10px;
+    margin-right: 40px;
+    box-sizing: border-box;
+    background-color: white;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px 10px 10px 10px;
+}
+.boxcontainer2{
+    width: 200px;
+    height: 250px;
+    margin-top: -270px;
+    margin-bottom: 10px;
+    margin-left: 250px;
+    box-sizing: border-box;
+    background-color: white;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px 10px 10px 10px;
+}
+.boxcontainer3{
+    width: 200px;
+    height: 250px;
+    margin-top: 30px;
+    margin-left: -10px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px 10px 10px 10px;
+}
+.boxcontainer4{
+    width: 200px;
+    height: 250px;
+    box-sizing: border-box;
+    margin: 10px;
+    margin-left: 30px;
+    background-color: white;
+    border-style: solid;
+    border:white;
+    border-radius: 10px 10px 10px 10px;
+}
+
+
+
+
+  
+  @keyframes glissement {
+    from {
+      margin-top: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-top: 0%;
+      width: 100%;
+    }
+  }
